@@ -25,6 +25,15 @@ plugins {
     id 'com.github.ben-manes.versions' version '0.39.0'
     id 'biz.aQute.bnd.builder' version '6.0.0'
     id 'ru.vyarus.animalsniffer' version '1.5.2'
+    id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "anubhav0407_SQM_project-1"
+    property "sonar.organization", "project1111"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 description = 'Mockito mock objects library core API and implementation'
